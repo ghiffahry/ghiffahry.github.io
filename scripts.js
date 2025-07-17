@@ -1,6 +1,6 @@
 // scripts.js
 
-// Theme Toggle
+// === Theme Toggle ===
 const themeToggle = document.getElementById("toggle-theme");
 const body = document.body;
 
@@ -8,7 +8,6 @@ if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark-mode");
 }
 
-// Toggle theme and update icon
 if (themeToggle) {
   const themeIcon = themeToggle.querySelector("i");
 
@@ -26,30 +25,34 @@ if (themeToggle) {
 
   themeToggle.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
+
     if (body.classList.contains("dark-mode")) {
       localStorage.setItem("theme", "dark");
     } else {
       localStorage.setItem("theme", "light");
     }
+
     updateThemeIcon();
   });
 }
 
-// Smooth Scroll for Navigation
-const navLinks = document.querySelectorAll("nav a");
+// === Smooth Scroll for Navigation ===
+const navLinks = document.querySelectorAll("nav a[href^='#']");
 navLinks.forEach(link => {
   link.addEventListener("click", function (e) {
     if (this.hash !== "") {
       e.preventDefault();
-      const hash = this.hash;
-      document.querySelector(hash).scrollIntoView({
-        behavior: "smooth"
-      });
+      const targetSection = document.querySelector(this.hash);
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
     }
   });
 });
 
-// Scroll Animation (AOS.js)
+// === Initialize AOS Animation (if available) ===
 if (typeof AOS !== "undefined") {
   AOS.init({
     duration: 800,
@@ -57,23 +60,25 @@ if (typeof AOS !== "undefined") {
   });
 }
 
-// Highlight active nav on scroll
-const sections = document.querySelectorAll("section");
-const navItems = document.querySelectorAll("nav a");
+// === Highlight Active Navigation Link on Scroll ===
+const sections = document.querySelectorAll("section[id]");
+const navItems = document.querySelectorAll("nav a[href^='#']");
 
 window.addEventListener("scroll", () => {
-  let current = "";
+  let currentSectionId = "";
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 100) {
-      current = section.getAttribute("id");
+    const sectionHeight = section.offsetHeight;
+
+    if (pageYOffset >= sectionTop - 100 && pageYOffset < sectionTop + sectionHeight - 100) {
+      currentSectionId = section.getAttribute("id");
     }
   });
 
   navItems.forEach(link => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
+    if (link.getAttribute("href") === `#${currentSectionId}`) {
       link.classList.add("active");
     }
   });
