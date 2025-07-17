@@ -17,152 +17,142 @@ body {
   color: var(--text-dark);
   scroll-behavior: smooth;
   transition: background-color var(--transition-speed), color var(--transition-speed);
+
+  /* Background image */
+  background-image: url('https://raw.githubusercontent.com/ghiffahry/ghiffahry.github.io/main/pics/4352598_891.jpg');
+  background-size: cover;       /* gambar memenuhi seluruh background */
+  background-position: center;  /* posisi gambar di tengah */
+  background-repeat: no-repeat; /* gambar tidak diulang */
+  background-attachment: fixed; /* gambar tetap saat scroll */
 }
 
+/* Mode gelap */
 body.dark-mode {
   background-color: var(--dark-color);
   color: var(--text-light);
+
+  /* Background gelap tanpa gambar agar kontras */
+  background-image: none;
 }
 
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: inherit;
+  margin-top: 0;
 }
 
-/* Paragraph */
 p {
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-/* Images */
 img {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
+  display: block;
+}
+
+/* Khusus logo pendidikan dan pengalaman */
+.pendidikan-logo, 
+#pengalaman img, 
+#organisasi img {
+  border-radius: 50%;
+  border: 2px solid #dee2e6;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+/* Logo pengalaman sedikit lebih kecil */
+#pengalaman img, 
+#organisasi img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
 }
 
 /* ======= Navigation ======= */
-nav {
+nav.navbar {
+  background-color: var(--light-color) !important; /* override Bootstrap bg-light */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav .navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav .nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+nav .nav-link:hover, nav .nav-link:focus {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+#toggle-theme.btn {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+#toggle-theme.btn:hover {
   background-color: var(--primary-color);
   color: white;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color var(--transition-speed), color var(--transition-speed);
-}
-
-/* Nav links */
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color var(--transition-speed);
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: var(--secondary-color);
-}
-
-/* Dark mode navbar */
-body.dark-mode nav {
-  background-color: #111827; /* warna gelap */
-  color: var(--text-light);
-}
-
-body.dark-mode nav a {
-  color: var(--text-light);
-}
-
-body.dark-mode nav a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* Toggle theme button */
-.toggle-theme, #toggle-theme {
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color var(--transition-speed), color var(--transition-speed);
-  color: var(--dark-color);
-}
-
-.toggle-theme:hover, #toggle-theme:hover {
-  background-color: #d4af37;
-  color: var(--light-color);
-}
-
-/* Dark mode toggle button */
-body.dark-mode .toggle-theme,
-body.dark-mode #toggle-theme {
-  background-color: #facc15;
-  color: var(--dark-color);
-}
-
-body.dark-mode .toggle-theme:hover,
-body.dark-mode #toggle-theme:hover {
-  background-color: #f3e88d;
-  color: var(--dark-color);
 }
 
 /* ======= Hero Section ======= */
-.hero {
+#hero {
   text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-  color: white;
-  transition: background var(--transition-speed);
+  padding: 4rem 1rem;
+  color: var(--dark-color);
+  text-shadow: 0 0 2px rgba(255,255,255,0.6);
 }
 
-.hero img {
-  width: 150px;
-  height: 150px;
+#hero img {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 4px solid var(--primary-color);
   margin-bottom: 1rem;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+#hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.hero p {
-  max-width: 600px;
-  margin: 0 auto;
+#hero p.lead {
+  max-width: 650px;
+  margin: 0 auto 1rem auto;
+  font-size: 1.25rem;
 }
 
-/* ======= Section Layout ======= */
-section {
-  margin-bottom: 4rem;
-}
-
-/* Section titles */
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* ======= Section Titles ======= */
+h2.mb-4 {
+  font-weight: 700;
   color: var(--primary-color);
   text-align: center;
   position: relative;
+  margin-bottom: 2rem !important;
 }
 
-.section-title::after {
+h2.mb-4::after {
   content: '';
   display: block;
   width: 60px;
@@ -172,42 +162,43 @@ section {
   border-radius: 999px;
 }
 
-/* ======= Grid Layouts ======= */
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-/* ======= Skill Icons ======= */
-.skills {
+/* ======= Pengalaman, Organisasi, Pendidikan Layout ======= */
+#pendidikan .timeline-item,
+#pengalaman > div,
+#organisasi > div {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
 }
 
-.skill-icon {
-  background-color: white;
-  border: 2px solid var(--primary-color);
+#pendidikan .timeline-item > div,
+#pengalaman > div > div,
+#organisasi > div > div {
+  flex: 1;
+}
+
+/* List style untuk pengalaman dan organisasi */
+#pengalaman ul,
+#organisasi ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* ======= Keahlian ======= */
+#keahlian .row-cols-2 > div,
+#keahlian .row-cols-md-4 > div {
+  text-align: center;
   color: var(--primary-color);
-  padding: 0.75rem;
-  border-radius: 12px;
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-  cursor: default;
 }
 
-.skill-icon:hover {
-  transform: scale(1.05);
+#keahlian i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+#keahlian i:hover {
+  color: var(--secondary-color);
 }
 
 /* ======= Cards ======= */
@@ -216,7 +207,8 @@ section {
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform var(--transition-speed), background-color var(--transition-speed), color var(--transition-speed);
+  transition: transform var(--transition-speed);
+  color: var(--text-dark);
 }
 
 .card:hover {
@@ -229,53 +221,48 @@ body.dark-mode .card {
 }
 
 /* ======= Footer ======= */
-footer {
+footer.bg-dark {
   background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 2rem 1rem;
-  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
 footer a {
   color: var(--secondary-color);
   margin: 0 0.5rem;
   text-decoration: none;
-  transition: color var(--transition-speed);
 }
 
 footer a:hover {
-  text-decoration: underline;
-  color: var(--light-color);
-}
-
-/* Dark mode footer */
-body.dark-mode footer {
-  background-color: #111827;
-  color: var(--text-light);
-}
-
-body.dark-mode footer a {
-  color: var(--secondary-color);
-}
-
-body.dark-mode footer a:hover {
-  color: var(--light-color);
   text-decoration: underline;
 }
 
 /* ======= Responsive ======= */
 @media (max-width: 768px) {
-  nav {
+  nav.navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .hero h1 {
+  #hero h1 {
     font-size: 2rem;
   }
 
-  .section-title {
+  h2.mb-4 {
     font-size: 1.5rem;
+  }
+
+  #pendidikan .timeline-item,
+  #pengalaman > div,
+  #organisasi > div {
+    flex-direction: column;
+  }
+
+  #pendidikan .timeline-item > div,
+  #pengalaman > div > div,
+  #organisasi > div > div {
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 }
