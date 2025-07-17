@@ -1,22 +1,37 @@
 // scripts.js
 
 // Theme Toggle
-const themeToggle = document.getElementById("theme-toggle");
+const themeToggle = document.getElementById("toggle-theme");
 const body = document.body;
 
 if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-theme");
+  body.classList.add("dark-mode");
 }
 
-// Toggle theme
+// Toggle theme and update icon
 if (themeToggle) {
+  const themeIcon = themeToggle.querySelector("i");
+
+  function updateThemeIcon() {
+    if (body.classList.contains("dark-mode")) {
+      themeIcon.classList.remove("bi-brightness-high");
+      themeIcon.classList.add("bi-moon");
+    } else {
+      themeIcon.classList.remove("bi-moon");
+      themeIcon.classList.add("bi-brightness-high");
+    }
+  }
+
+  updateThemeIcon();
+
   themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-theme");
-    if (body.classList.contains("dark-theme")) {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
       localStorage.setItem("theme", "dark");
     } else {
       localStorage.setItem("theme", "light");
     }
+    updateThemeIcon();
   });
 }
 
@@ -35,19 +50,10 @@ navLinks.forEach(link => {
 });
 
 // Scroll Animation (AOS.js)
-AOS.init({
-  duration: 800,
-  once: true
-});
-
-// CV Download Button
-const downloadBtn = document.getElementById("download-cv");
-if (downloadBtn) {
-  downloadBtn.addEventListener("click", () => {
-    window.open(
-      "https://github.com/ghiffahry/ghiffahry.github.io/blob/main/cv/CV-GHARDAPATY%20G%20GHIFFARY.pdf?raw=true",
-      "_blank"
-    );
+if (typeof AOS !== "undefined") {
+  AOS.init({
+    duration: 800,
+    once: true
   });
 }
 
