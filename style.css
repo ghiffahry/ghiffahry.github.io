@@ -24,20 +24,24 @@ body.dark-mode {
   color: var(--text-light);
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
+/* Paragraph */
 p {
   line-height: 1.6;
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -55,27 +59,66 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
+/* Nav links */
 nav a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
   font-weight: 500;
+  transition: color var(--transition-speed);
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: var(--secondary-color);
 }
 
-.toggle-theme {
+/* Dark mode navbar */
+body.dark-mode nav {
+  background-color: #111827; /* warna gelap */
+  color: var(--text-light);
+}
+
+body.dark-mode nav a {
+  color: var(--text-light);
+}
+
+body.dark-mode nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Toggle theme button */
+.toggle-theme, #toggle-theme {
   background-color: var(--secondary-color);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 999px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color var(--transition-speed);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  color: var(--dark-color);
+}
+
+.toggle-theme:hover, #toggle-theme:hover {
+  background-color: #d4af37;
+  color: var(--light-color);
+}
+
+/* Dark mode toggle button */
+body.dark-mode .toggle-theme,
+body.dark-mode #toggle-theme {
+  background-color: #facc15;
+  color: var(--dark-color);
+}
+
+body.dark-mode .toggle-theme:hover,
+body.dark-mode #toggle-theme:hover {
+  background-color: #f3e88d;
+  color: var(--dark-color);
 }
 
 /* ======= Hero Section ======= */
@@ -84,6 +127,7 @@ nav a:hover {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #1e3a8a, #3b82f6);
   color: white;
+  transition: background var(--transition-speed);
 }
 
 .hero img {
@@ -109,6 +153,7 @@ section {
   margin-bottom: 4rem;
 }
 
+/* Section titles */
 .section-title {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -158,6 +203,7 @@ section {
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s;
+  cursor: default;
 }
 
 .skill-icon:hover {
@@ -170,7 +216,7 @@ section {
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform var(--transition-speed);
+  transition: transform var(--transition-speed), background-color var(--transition-speed), color var(--transition-speed);
 }
 
 .card:hover {
@@ -188,15 +234,33 @@ footer {
   color: white;
   text-align: center;
   padding: 2rem 1rem;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
 footer a {
   color: var(--secondary-color);
   margin: 0 0.5rem;
   text-decoration: none;
+  transition: color var(--transition-speed);
 }
 
 footer a:hover {
+  text-decoration: underline;
+  color: var(--light-color);
+}
+
+/* Dark mode footer */
+body.dark-mode footer {
+  background-color: #111827;
+  color: var(--text-light);
+}
+
+body.dark-mode footer a {
+  color: var(--secondary-color);
+}
+
+body.dark-mode footer a:hover {
+  color: var(--light-color);
   text-decoration: underline;
 }
 
