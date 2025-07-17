@@ -3,59 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV Ghardapaty Ghaly Ghiffary - Data Analyst & Data Scientist">
   <title>CV Ghardapaty Ghaly Ghiffary</title>
+  <!-- Google Fonts & Icon Libraries -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pnK7+eGN6Rz+K8GfVFlZp+XPnF8c2s9F1i6YH7t3r+D6I8ehpEaEWxYt4QmS07C1Xd6xOvQiyt3b6IwL3RxZjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS Library for scroll animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#profile">Profil</a></li>
+      <li><a href="#education">Pendidikan</a></li>
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero" style="background-image: url('hero-bg.jpg');">
+    <div class="hero-content" data-aos="fade-up">
       <h1>Ghardapaty Ghaly Ghiffary</h1>
-      <p>Statistika & Data Science | IPB University</p>
-      <p><a href="mailto:ghaly@example.com">ghaly@example.com</a> | +62 812-3456-7890</p>
-      <p><a href="https://linkedin.com/in/ghaly" target="_blank">LinkedIn</a> | <a href="https://github.com/ghaly" target="_blank">GitHub</a></p>
-    </header>
+      <p>Data Analyst & Data Scientist</p>
+      <div class="cta-buttons">
+        <a href="style.css" download class="btn"><i class="fas fa-download"></i> Download CV</a>
+        <a href="#contact" class="btn btn-outline">Kontak Saya</a>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>🎓 Pendidikan</h2>
-      <p><strong>Magister Statistika dan Sains Data</strong>, IPB University<br>
-      Semester akhir – Fokus pada pemodelan spasial-temporal dan pembelajaran mesin.</p>
+  <main class="container">
+    <!-- Profile Summary -->
+    <section id="profile" data-aos="fade-right">
+      <h2><i class="fas fa-user-circle"></i> Profil</h2>
+      <p class="summary">
+        Mahasiswa Magister Statistika dan Sains Data IPB University dengan latar belakang Sarjana Statistika. Berpengalaman dalam analisis data spasial dan pemodelan statistik, membangun dashboard interaktif, serta mendukung keputusan strategis berbasis data di sektor pemerintahan dan riset kebijakan publik.
+      </p>
     </section>
 
-    <section>
-      <h2>💼 Pengalaman</h2>
-      <ul>
-        <li>
-          <strong>Data Science Intern – BPS Indonesia</strong><br>
-          Mengembangkan model klasifikasi kemiskinan berbasis stacking ensemble.
-        </li>
-        <li>
-          <strong>Asisten Dosen – Statistika Lanjut</strong><br>
-          Membimbing praktikum, membantu mahasiswa memahami analisis multivariat.
-        </li>
-      </ul>
+    <!-- Education Timeline -->
+    <section id="education" data-aos="fade-left">
+      <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="zoom-in">
+          <span class="timeline-date">2023–Sekarang</span>
+          <h3>Magister Statistika & Sains Data</h3>
+          <p>Institut Pertanian Bogor (IPB University)</p>
+        </div>
+        <div class="timeline-item" data-aos="zoom-in">
+          <span class="timeline-date">2017–2021</span>
+          <h3>Sarjana Statistika</h3>
+          <p>Universitas Islam Indonesia (IPK 3.56)</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>🛠️ Keahlian</h2>
-      <ul class="skill-list">
-        <li>Python, R, SQL</li>
-        <li>Excel (Pivot, Macro), Power BI</li>
-        <li>Machine Learning, Statistik Terapan</li>
-        <li>ETL, EDA, SMOTE, Model Evaluasi</li>
-      </ul>
+    <!-- Experience Timeline -->
+    <section id="experience" data-aos="fade-right">
+      <h2><i class="fas fa-briefcase"></i> Pengalaman Kerja</h2>
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item left" data-aos="fade-up">
+          <span class="timeline-date">Agustus 2022 – Agustus 2023</span>
+          <h3>Staff Sub-koordinator Data Perencanaan</h3>
+          <h4>Bappeda Kabupaten Bangka</h4>
+          <ul>
+            <li>Kelola data perencanaan strategis menggunakan SIPD, SPBE, dan E-Walidata.</li>
+            <li>Membangun model peramalan makroekonomi serta dashboard evaluasi kinerja daerah di Power BI.</li>
+            <li>Menyediakan analisis tren tahunan untuk pengambilan keputusan data-driven.</li>
+          </ul>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item right" data-aos="fade-up">
+          <span class="timeline-date">Agustus 2021 – Oktober 2021</span>
+          <h3>Enumerator</h3>
+          <h4>BPOM – PT. Wahana Duta Utama</h4>
+          <ul>
+            <li>Melaksanakan survei kesadaran dan kepuasan masyarakat terhadap obat dan makanan.</li>
+            <li>Melakukan entri, validasi data, dan analisis statistik awal untuk kualitas data optimal.</li>
+          </ul>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item left" data-aos="fade-up">
+          <span class="timeline-date">Jan 2020 – Mar 2020</span>
+          <h3>Asisten Peneliti</h3>
+          <h4>LPEM FEB UI</h4>
+          <ul>
+            <li>Web scraping dan analisis sentimen publik untuk kebijakan perdagangan.</li>
+            <li>Membuat dashboard interaktif untuk laporan klien kementerian.</li>
+          </ul>
+        </div>
+        <!-- Item 4 -->
+        <div class="timeline-item right" data-aos="fade-up">
+          <span class="timeline-date">2019 – 2021</span>
+          <h3>Asisten Praktikum</h3>
+          <h4>Laboratorium Terpadu FMIPA UII</h4>
+          <ul>
+            <li>Membimbing praktikum Analisis Data Eksplorasi, Regresi, dan Komputasi Statistika.</li>
+            <li>Mentor pembuatan dashboard dan analisis data dengan R, Python, dan Excel.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>📄 Publikasi & Proyek</h2>
-      <ul>
-        <li>📊 <strong>Klasifikasi Kemiskinan Makanan:</strong> Model stacking RF-SVM dengan XGBoost sebagai final estimator, dilengkapi EDA, pencilan, balancing data, feature importance.</li>
-        <li>🔍 <strong>SEBLUP Rao-Yu Modifikasi:</strong> Model spasial-temporal dengan efek SAR & AR(1), estimasi parameter secara full-loglikelihood.</li>
-      </ul>
+    <!-- Skills with Progress Bars -->
+    <section id="skills" data-aos="fade-left">
+      <h2><i class="fas fa-tools"></i> Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill" data-aos="flip-left">
+          <h4>Python</h4>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill" data-aos="flip-left">
+          <h4>R</h4>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill" data-aos="flip-left">
+          <h4>Power BI</h4>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill" data-aos="flip-left">
+          <h4>SQL & Excel</h4>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill" data-aos="flip-left">
+          <h4>Spatial Analysis</h4>
+          <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>© 2025 Ghardapaty Ghaly Ghiffary. Dibuat dengan ❤️ dan GitHub Pages.</p>
-    </footer>
-  </div>
+    <!-- Projects Grid & Modals -->
+    <section id="projects" data-aos="fade-up">
+      <h2><i class="fas fa-project-diagram"></i> Proyek & Publikasi</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in" data-modal-target="#modal1">
+          <h3>Klasifikasi Kemiskinan Makanan</h3>
+          <p>Stacking RF-SVM + XGBoost, EDA, feature importance.</p>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-modal-target="#modal2">
+          <h3>SEBLUP Rao-Yu Modifikasi</h3>
+          <p>Model spasial-temporal dengan SAR & AR(1), full log-likelihood.</p>
+        </div>
+        <!-- Additional cards... -->
+      </div>
+      <!-- Modal Templates -->
+      <div class="modal" id="modal1">
+        <div class="modal-content">
+          <span class="close-btn" data-modal-close>&times;</span>
+          <h3>Klasifikasi Kemiskinan Makanan</h3>
+          <ul>
+            <li>Implementasi metode stacking (RandomForest, SVM, XGBoost).</li>
+            <li>Prapengolahan: EDA, handling outliers, SMOTE balancing.</li>
+            <li>Evaluasi menggunakan F1-score, balanced accuracy, Cohen's kappa.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal" id="modal2">
+        <div class="modal-content">
+          <span class="close-btn" data-modal-close>&times;</span>
+          <h3>SEBLUP Rao-Yu Modifikasi</h3>
+          <ul>
+            <li>Penambahan efek spasial (SAR) & temporal (AR(1)).</li>
+            <li>Penurunan lengkap log-likelihood & estimasi parameter.</li>
+            <li>Simulasi dan validasi menggunakan data kemiskinan regional.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+      <h2><i class="fas fa-envelope"></i> Kontak</h2>
+      <div class="contact-content">
+        <form action="#" class="contact-form">
+          <input type="text" placeholder="Nama" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="4" placeholder="Pesan Anda..." required></textarea>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+        <address class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Bogor, Indonesia</p>
+          <p><i class="fas fa-phone-alt"></i> +62 853-8115-7324</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:ghiffaryankh@gmail.com">ghiffaryankh@gmail.com</a></p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Contact Button -->
+  <a href="#contact" class="floating-btn" aria-label="Kontak Saya"><i class="fas fa-comment-dots"></i></a>
+
+  <!-- AOS & Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    // Theme Toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      toggleBtn.textContent = document.body.classList.contains('dark-theme') ? '☀️' : '🌙';
+    });
+    // Back to Top
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('show', window.scrollY > 300);
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    // Modal Functionality
+    document.querySelectorAll('[data-modal-target]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = document.querySelector(btn.dataset.modalTarget);
+        modal.classList.add('active');
+      });
+    });
+    document.querySelectorAll('[data-modal-close]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.modal').classList.remove('active');
+      });
+    });
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', e => {
+        if (e.target === modal) modal.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
