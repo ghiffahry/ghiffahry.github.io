@@ -1,356 +1,176 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV Ghardapaty Ghaly Ghiffary - Data Analyst & Data Scientist profesional dengan pengalaman di bidang analisis data spasial, machine learning, dan visualisasi data">
-    <title>Ghardapaty Ghaly Ghiffary - Data Analyst & Data Scientist</title>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ghardapaty Ghaly Ghiffary" />
+  <meta name="description" content="Resume dan Portofolio Ghardapaty Ghaly Ghiffary - Mahasiswa Pascasarjana Statistika IPB" />
+  <title>Ghardapaty Ghaly Ghiffary | Resume</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="nav-brand">GG Ghiffary</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#experience">Pengalaman</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#publications">Publikasi</a></li>
-                <li><a href="#contact">Kontak</a></li>
-                <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
-            </ul>
-        </div>
-    </nav>
+<body data-bs-theme="light">
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Ghardapaty Ghaly Ghiffary</h1>
-                <p class="hero-subtitle">Data Analyst & Data Scientist</p>
-                <p class="hero-description">
-                    Mahasiswa Magister Statistika dan Sains Data IPB University dengan passion dalam analisis data spasial, 
-                    machine learning, dan visualisasi data untuk mendukung pengambilan keputusan strategis.
-                </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i>
-                        Hubungi Saya
-                    </a>
-                    <a href="https://bit.ly/fahry-cerita-data" target="_blank" class="btn btn-outline">
-                        <i class="fas fa-download"></i>
-                        Download CV
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================= HEADER NAV ================= -->
+<header class="sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light px-4 py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">G.G. Ghiffary</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organisasi">Organisasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publikasi">Publikasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sertifikasi">Sertifikasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+        </ul>
+        <button id="toggle-theme" class="btn btn-outline-secondary ms-3" title="Toggle theme"><i class="bi bi-brightness-high"></i></button>
+        <a href="cv_ghiffary.pdf" class="btn btn-primary ms-2" target="_blank"><i class="bi bi-download"></i> CV</a>
+      </div>
+    </div>
+  </nav>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Tentang Saya</h2>
-                <p class="section-subtitle">
-                    Mengenal lebih dekat profil dan latar belakang pendidikan saya
-                </p>
-            </div>
-            
-            <div class="card fade-up">
-                <h3><i class="fas fa-user-circle"></i> Profil Profesional</h3>
-                <p>
-                    Lulusan Sarjana Statistika dan mahasiswa aktif semester akhir Magister Statistika dan Sains Data IPB University. 
-                    Terbuka untuk peluang karir di bidang data, khususnya terkait data spasial dan pembelajaran mesin statistika. 
-                    Aktif mengembangkan kompetensi melalui eksplorasi literatur dan aplikasi pemodelan statistika serta pengolahan data.
-                </p>
-                <p>
-                    Memiliki kemampuan dalam analisis data, pemodelan statistik, machine learning, serta pengolahan dan visualisasi data 
-                    menggunakan R, Python, Excel, Power BI, dan dasar SQL. Siap berkontribusi sebagai statistisi atau praktisi data 
-                    dengan solusi yang profesional dan berbasis data.
-                </p>
-            </div>
-            
-            <div class="timeline fade-up">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 – Sekarang</div>
-                        <h3 class="timeline-title">Magister Statistika & Sains Data</h3>
-                        <p class="timeline-company">Institut Pertanian Bogor (IPB University)</p>
-                        <div class="timeline-description">
-                            <p>IPK: 3.56 • Fokus pada analisis data spasial dan machine learning</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2017 – 2021</div>
-                        <h3 class="timeline-title">Sarjana Statistika</h3>
-                        <p class="timeline-company">Universitas Islam Indonesia</p>
-                        <div class="timeline-description">
-                            <p>IPK: 3.56 • Lulus dengan predikat Sangat Memuaskan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================= HERO ================= -->
+<section id="hero" class="container py-5 text-center">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-3 mb-3">
+      <img src="assets/foto.jpg" alt="Foto Ghardapaty" class="rounded-circle img-fluid shadow" style="width: 180px;" />
+    </div>
+    <div class="col-md-7">
+      <h1 class="fw-bold">Ghardapaty Ghaly Ghiffary</h1>
+      <p class="lead">Mahasiswa Magister Statistika dan Sains Data di IPB University yang fokus pada bidang data spasial dan pembelajaran mesin statistika.</p>
+      <p>Saya terbuka untuk peluang karier di bidang data, dan secara aktif mengembangkan kompetensi akademik dan praktis melalui eksplorasi literatur dan aplikasi pemodelan statistika serta pengolahan data.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Pengalaman Kerja</h2>
-                <p class="section-subtitle">
-                    Perjalanan karir dan pengalaman profesional dalam bidang data dan statistika
-                </p>
-            </div>
-            
-            <div class="timeline fade-up">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Agustus 2022 – Agustus 2023</div>
-                        <h3 class="timeline-title">Staff Sub-koordinator Data Perencanaan</h3>
-                        <p class="timeline-company">Badan Perencanaan Pembangunan Daerah Kabupaten Bangka</p>
-                        <div class="timeline-description">
-                            <ul>
-                                <li>Mengelola data perencanaan menggunakan platform pemerintah (SIPD, SPBE, SIRUP, E-Walidata)</li>
-                                <li>Membangun model peramalan makroekonomi dan dashboard evaluasi kinerja daerah</li>
-                                <li>Melakukan analisis data untuk mendukung penyusunan dokumen perencanaan (RKPD, RPD, KLHS)</li>
-                                <li>Menggunakan Python, R, Excel, dan Power BI untuk analisis dan visualisasi data</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Agustus 2021 – Oktober 2021</div>
-                        <h3 class="timeline-title">Enumerator</h3>
-                        <p class="timeline-company">BPOM – PT. Wahana Duta Utama</p>
-                        <div class="timeline-description">
-                            <ul>
-                                <li>Melaksanakan survei pengukuran kesadaran dan kepuasan masyarakat terhadap obat dan makanan</li>
-                                <li>Melakukan entri data, validasi, dan analisis statistik awal untuk kualitas data optimal</li>
-                                <li>Memastikan akurasi dan konsistensi data yang dikumpulkan dari lapangan</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Januari 2020 – Maret 2020</div>
-                        <h3 class="timeline-title">Asisten Peneliti</h3>
-                        <p class="timeline-company">Lembaga Penyelidikan Ekonomi dan Masyarakat-FEB UI (LPEM-FEB UI)</p>
-                        <div class="timeline-description">
-                            <ul>
-                                <li>Melakukan web scraping dan analisis sentimen publik untuk kebijakan perdagangan</li>
-                                <li>Memfasilitasi Focus Group Discussion dan menyusun laporan penelitian</li>
-                                <li>Membuat dashboard interaktif untuk visualisasi hasil analisis kepada klien</li>
-                                <li>Mendukung penelitian "Dampak Kebijakan Post Border Terhadap Produk Kertas"</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019 – 2021</div>
-                        <h3 class="timeline-title">Asisten Praktikum</h3>
-                        <p class="timeline-company">Laboratorium Terpadu Fakultas Matematika dan Ilmu Pengetahuan Alam UII</p>
-                        <div class="timeline-description">
-                            <ul>
-                                <li>Menjadi tentor praktikum untuk mata kuliah Analisis Data Eksplorasi dan Komputasi Statistika</li>
-                                <li>Membimbing pembuatan dashboard menggunakan Power BI</li>
-                                <li>Memfasilitasi penggunaan software R, Python, dan Excel untuk analisis data</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================= PENDIDIKAN ================= -->
+<section id="pendidikan" class="container py-5">
+  <h2 class="mb-4">Pendidikan</h2>
+  <div class="timeline">
+    <div class="timeline-item mb-4">
+      <h5 class="mb-1">IPB University — Magister Statistika dan Sains Data</h5>
+      <small>2023 - Sekarang</small>
+      <p>Fokus pada pemodelan data spasial-temporal, pembelajaran mesin, dan analisis data sosial-ekonomi berbasis survei nasional.</p>
+    </div>
+    <div class="timeline-item">
+      <h5 class="mb-1">Universitas Islam Indonesia — Sarjana Statistika</h5>
+      <small>2018 - 2022</small>
+      <p>Menempuh pendidikan dasar hingga lanjut dalam statistika terapan, ekonometri, demografi, dan pemodelan prediktif berbasis machine learning.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Keahlian</h2>
-                <p class="section-subtitle">
-                    Keahlian teknis dan alat yang dikuasai
-                </p>
-            </div>
-            
-            <div class="skills-grid fade-up">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Pemrograman</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Python</span>
-                            <span class="skill-level">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>R</span>
-                            <span class="skill-level">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Visualisasi Data</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Power BI</span>
-                            <span class="skill-level">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Excel</span>
-                            <span class="skill-level">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>SQL</span>
-                            <span class="skill-level">70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================= KEAHLIAN ================= -->
+<section id="keahlian" class="bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4">Keahlian</h2>
+    <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+      <div class="col"><i class="bi bi-code-slash fs-2 text-primary"></i><p>Python</p></div>
+      <div class="col"><i class="bi bi-r-square fs-2 text-info"></i><p>R</p></div>
+      <div class="col"><i class="bi bi-table fs-2 text-warning"></i><p>Excel</p></div>
+      <div class="col"><i class="bi bi-bar-chart-line fs-2 text-success"></i><p>Power BI</p></div>
+      <div class="col"><i class="bi bi-database fs-2 text-secondary"></i><p>SQL (Dasar)</p></div>
+      <div class="col"><i class="bi bi-map fs-2 text-danger"></i><p>Analisis Spasial</p></div>
+      <div class="col"><i class="bi bi-gear-wide-connected fs-2 text-dark"></i><p>Machine Learning</p></div>
+      <div class="col"><i class="bi bi-bar-chart fs-2 text-primary"></i><p>Statistika</p></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Publikasi</h2>
-                <p class="section-subtitle">
-                    Beberapa publikasi yang telah saya tulis
-                </p>
-            </div>
-            
-            <div class="publications-grid fade-up">
-                <div class="publication-card">
-                    <h3 class="publication-title">Analytical Research Focus Areas of Disaster</h3>
-                    <p class="publication-meta">Scopus 2014-2018</p>
-                </div>
-                <div class="publication-card">
-                    <h3 class="publication-title">Application of Spatial 'K'luster Analysis</h3>
-                    <p class="publication-meta">Infrastructure Inequality Mapping in Bantul Regency, Indonesia</p>
-                </div>
-                <div class="publication-card">
-                    <h3 class="publication-title">Analysis of Pre-post Covid-19 Influence</h3>
-                    <p class="publication-meta">Socio-Economic Aspects in 7 Regencies/Cities</p>
-                </div>
-                <div class="publication-card">
-                    <h3 class="publication-title">Perbandingan Algoritma HDBSCAN Dan Agglomerative Hierarchical Clustering</h3>
-                    <p class="publication-meta">Klasterisasi pada Data yang Mengandung Pencilan</p>
-                </div>
-                <div class="publication-card">
-                    <h3 class="publication-title">Analisis Kinerja Model Stacking Berbasis Random Forest dan SVM</h3>
-                    <p class="publication-meta">Klasifikasi Rumah Tangga Berdasarkan Garis Kemiskinan Makanan di Provinsi Jawa Barat</p>
-                </div>
-                <div class="publication-card">
-                    <h3 class="publication-title">Comparative Performance of SARIMAX and LSTM Model</h3>
-                    <p class="publication-meta">Predicting Import Quantities of Milk, Butter, and Eggs</p>
-                </div>
-                <div class="publication-card">
-                    <h3 class="publication-title">The Impact of Income Tax Facility Policy</h3>
-                    <p class="publication-meta">Investment in Certain Business Fields in 34 Provinces in Indonesia</p>
-                </div>
-                <div class="publication-card">
-                    <h3 class="publication-title">Assessing The Impact of Economic and Social Dynamics</h3>
-                    <p class="publication-meta">Domestic Tourism in Indonesia: An Econometric and Cluster Analysis (Progress)</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================= PENGALAMAN ================= -->
+<section id="pengalaman" class="container py-5">
+  <h2 class="mb-4">Pengalaman Kerja & Magang</h2>
+  <div class="mb-4">
+    <h5 class="mb-1">Statistisi – BPS Provinsi Jawa Barat</h5>
+    <small>2023 – Sekarang</small>
+    <ul>
+      <li>Mengolah data SUSENAS dan survei nasional lainnya</li>
+      <li>Mengembangkan model kemiskinan spasial dan temporal</li>
+    </ul>
+  </div>
+  <div>
+    <h5 class="mb-1">Magang – PT Transportasi Jakarta</h5>
+    <small>2022</small>
+    <ul>
+      <li>Analisis perilaku perjalanan berdasarkan survei penumpang</li>
+      <li>Visualisasi dan pemodelan data transportasi</li>
+    </ul>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Kontak</h2>
-                <p class="section-subtitle">
-                    Hubungi saya untuk informasi lebih lanjut
-                </p>
-            </div>
-            
-            <div class="contact-content fade-up">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+6285381157324</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>ghiffaryankh@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Bogor, Indonesia</span>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="name">Nama</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Pesan</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================= ORGANISASI ================= -->
+<section id="organisasi" class="bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4">Organisasi</h2>
+    <ul>
+      <li>Ketua Divisi Penelitian dan Pengembangan, HIMASTA Unpad (2021)</li>
+      <li>Anggota Divisi Sosial, HIMASTA Unpad (2020)</li>
+      <li>Staff Divisi Media dan Informasi, HIMASTA Unpad (2019)</li>
+    </ul>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2023 Ghardapaty Ghaly Ghiffary. All rights reserved.</p>
-    </footer>
+<!-- ================= PUBLIKASI ================= -->
+<section id="publikasi" class="container py-5">
+  <h2 class="mb-4">Publikasi Penelitian</h2>
+  <ul>
+    <li>Analisis Spasial Kemiskinan di Jawa Barat menggunakan Model SEBLUP dengan Efek SAR dan AR(1) — IPB University</li>
+    <li>Prediksi Harga CPO Menggunakan Hybrid Transformer-BiLSTM-XGBoost — Simulasi Thesis</li>
+  </ul>
+</section>
 
-    <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-        });
-    </script>
+<!-- ================= SERTIFIKASI ================= -->
+<section id="sertifikasi" class="bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4">Sertifikasi & Penghargaan</h2>
+    <ul>
+      <li>Data Science Specialization – Coursera (2022)</li>
+      <li>Juara 2 Data Challenge Nasional Statistik (2021)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= PORTOFOLIO ================= -->
+<section id="portofolio" class="container py-5">
+  <h2 class="mb-4">Portofolio</h2>
+  <div class="d-flex flex-wrap gap-3">
+    <a href="https://github.com/ghiffahry" target="_blank" class="btn btn-outline-dark">
+      <i class="bi bi-github"></i> GitHub
+    </a>
+    <a href="https://medium.com/@ghiffahry" target="_blank" class="btn btn-outline-dark">
+      <i class="bi bi-medium"></i> Medium
+    </a>
+    <a href="https://drive.google.com/drive/folders/xyz" target="_blank" class="btn btn-outline-dark">
+      <i class="bi bi-google"></i> Google Drive
+    </a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">© 2025 Ghardapaty Ghaly Ghiffary</p>
+  <div class="d-flex justify-content-center gap-3">
+    <a href="mailto:ghiffary@gmail.com" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+    <a href="https://www.linkedin.com/in/ghiffahry" class="text-white"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/ghiffahry" class="text-white"><i class="bi bi-github"></i></a>
+  </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
