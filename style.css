@@ -731,6 +731,23 @@ footer .footer-social a:hover {
     height: 70px;
   }
 }
+@media (max-width: 576px) {
+  footer .container > div[style*="position: absolute"] {
+    position: static !important;
+    max-width: 100%;
+    text-align: center !important;
+    margin-top: 0.75rem;
+    padding: 0 1rem;
+  }
+
+  footer .container > div[style*="position: absolute"] span {
+    font-size: 0.85rem !important;
+  }
+
+  footer .container > div[style*="position: absolute"] span span {
+    font-size: 0.75rem !important;
+  }
+}
 
 /* ======= Animasi Masuk ======= */
 @keyframes fadeInUp {
