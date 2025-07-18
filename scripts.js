@@ -258,19 +258,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 200));
   }
 
-  // === Section Expand/Collapse ===
-  sections.forEach(section => {
-    const btn = document.createElement("button");
-    btn.className = "section-toggle";
-    btn.textContent = "Collapse";
-    section.insertBefore(btn, section.firstChild);
-    btn.addEventListener("click", () => {
-      section.classList.toggle("collapsed");
-      btn.textContent = section.classList.contains("collapsed") ? "Expand" : "Collapse";
-      saveActivityLog(`Section ${section.id} toggled`);
-    });
-  });
-
   // === Keyboard Shortcuts ===
   document.addEventListener("keydown", (e) => {
     if (e.ctrlKey && e.key === "b") {
