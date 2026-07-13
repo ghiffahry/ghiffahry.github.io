@@ -2,7 +2,7 @@
 
 [🔗 Kunjungi Halaman CV Interaktif](https://ghiffahry.github.io/)
 
-CV Interaktif ini saya buat sebagai media digital yang memudahkan siapa pun—rekan kerja, perusahaan, hingga perekrut untuk mengenal saya secara cepat dan profesional melalui satu tautan. Menggunakan tampilan yang responsif dan akses yang mudah, CV atau web portofolio ini diharapkan dapat memperluas jejaring serta membuka peluang kolaborasi di dunia kerja yang semakin digital dan terhubung.
+CV Interaktif ini saya buat sebagai media digital yang memudahkan siapa pun termasuk rekan kerja, perusahaan, hingga perekrut untuk mengenal saya secara cepat dan profesional melalui satu tautan. Menggunakan tampilan yang responsif dan akses yang mudah, CV atau web portofolio ini diharapkan dapat memperluas jejaring serta membuka peluang kolaborasi di dunia kerja yang semakin digital dan terhubung.
 
 ## Apa Saja yang Digunakan
 
