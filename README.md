@@ -1,4 +1,4 @@
-# 📌 CV Interaktif — Personal Web Resume
+# 📌 CV Interaktif - Personal Web Resume
 
 [🔗 Kunjungi Halaman CV Interaktif](https://ghiffahry.github.io/)
 
